@@ -1,0 +1,30 @@
+p
+{
+  text-align: justify;
+}
+
+img
+{
+  width: 100%;
+  height: 790px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  p
+  {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  img
+  {
+    height: 500px;
+    margin-bottom: 20px;
+  }
+
+  .rowmobile
+  {
+    margin: 15px 0 10px !important;
+  }
+}
