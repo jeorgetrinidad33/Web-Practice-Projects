@@ -36,3 +36,25 @@ i
 {
   padding: 0 10px;
 }
+
+@media screen and (max-width: 600px)
+{
+  h1
+  {
+    margin: 0px;
+  }
+
+  p
+  {
+    margin: 0 0 10px;
+  }
+  .iconsmobile
+  {
+    padding-top: 10px !important;
+  }
+
+  .iconsmobile i
+  {
+    padding: 0px;
+  }
+}
