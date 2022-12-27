@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The 2021 Frontend Developer Crash Course</title>
+        <link rel="stylesheet" href="css/main.css">
+        <style> @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap'); </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="navbar">
+                <header class="container">
+                <a href="#">Remember<span>That</span></a>
+
+                <img id="mobile-cta" class="mobile-menu" src="images/list.svg" alt="Open Navigation">
+
+                <nav>
+                    <svg id="mobile-exit" class="mobile-menu-exit" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                      </svg>
+                    <ul class="primary-nav">
+                        <li class="current"><a href="">Home</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Pricing</a></li>
+                    </ul>
+                    <ul class="secondary-nav">
+                        <li><a href="">Contact</a></li>
+                        <li class="go-premium-cta"><a href="">Go Premium</a></li>
+                    </ul>
+                </nav>
+                </header>
+            </div>
+            
+
+            <section class="hero">
+                <div class="container">
+                    <div class="left-col">
+                        <p class="subhead">It's Nitty &amp; Gritty!</p>
+                        <h1>A Task App That Doesn't Stink</h1>
+
+                        <div class="hero-cta">
+                            <a href="#" class="primary-cta">Try for free</a>
+                            <a href="#" class="watch-video-cta">
+                                <img src="images/camera-video-fill.svg" alt="Watch a video" /> Watch video
+                            </a>
+                        </div>
+                    </div>
+
+                    <img src="images/illustration.svg" class="hero-img" alt="Illustration">
+                </div>
+            </section>
+
+            <section class="features-section">
+                <div class="container">
+                    <ul>
+                        <li>Unlimited Tasks</li>
+                        <li>SMS Task Reminders</li>
+                        <li>Confetti Explosions upon Task Completions</li>
+                        <li>Spcial Media Announcements</li>
+                        <li>Real Time Collaboration</li>
+                        <li>Other Awesome Feautres</li>
+                    </ul>
+                </div>
+
+                <img src="images/holding-phone.jpg" alt="Man holding a phone.">
+            </section>
+
+            <section class="testimonials-section">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <img src="images/person.jpg" alt="Person">
+                            <blockquote>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio dicta quam exercitationem incidunt in quibusdam minus deleniti sunt ipsum, nihil ab, eos numquam id facere!"</blockquote>
+                            <cite>- Adam Green</cite>
+                        </li>
+                        <li>
+                            <img src="images/person.jpg" alt="Person">
+                            <blockquote>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio dicta quam exercitationem incidunt in quibusdam minus deleniti sunt ipsum, nihil ab, eos numquam id facere!"</blockquote>
+                            <cite>- Adam Green</cite>
+                        </li>
+                        <li>
+                            <img src="images/person.jpg" alt="Person">
+                            <blockquote>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio dicta quam exercitationem incidunt in quibusdam minus deleniti sunt ipsum, nihil ab, eos numquam id facere!"</blockquote>
+                            <cite>- Adam Green</cite>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <div class="container">
+                    <div class="contact-left">
+                        <h2>Contact</h2>
+
+                        <form action="">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                            <input type="submit" class="send-message-cta" value="Send message">
+                        </form>
+                    </div>
+
+                    <div class="contact-right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44755.58510216542!2d-73.89066338539128!3d45.485432420025425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc93b0cb94ee075%3A0x1359ec9abfd9d680!2sSportplexe%20Pierrefonds!5e0!3m2!1sen!2sca!4v1672168512106!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <script>
+            const mobileBtn = document.getElementById('mobile-cta')
+            const nav = document.querySelector('nav')
+            const mobileBtnExit = document.getElementById('mobile-exit')
+
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn')
+            })
+
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn')
+            })
+        </script>
+    </body>
+</html>
