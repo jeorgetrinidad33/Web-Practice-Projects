@@ -330,6 +330,8 @@ section.contact-section iframe {
     background: var(--primary-color);
     left: 0;
     top: -4em;
+    -webkit-animation: introLoad 2s forwards;
+            animation: introLoad 2s forwards;
   }
   section.features-section:after {
     content: "";
@@ -339,5 +341,27 @@ section.contact-section iframe {
     background: url("../images/dots.svg") no-repeat;
     left: 6em;
     top: 2em;
+    -webkit-animation: introLoad 1.5s forwards;
+            animation: introLoad 1.5s forwards;
+  }
+}
+@-webkit-keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+            clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  }
+}
+@keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+            clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
   }
 }/*# sourceMappingURL=main.css.map */

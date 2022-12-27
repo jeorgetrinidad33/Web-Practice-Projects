@@ -407,6 +407,7 @@ section.contact-section {
             background: var(--primary-color);
             left: 0;
             top: -4em;
+            animation: introLoad 2s forwards;
         }
 
         &:after {
@@ -417,6 +418,16 @@ section.contact-section {
             background: url('../images/dots.svg') no-repeat;
             left: 6em;
             top: 2em;
+            animation: introLoad 1.5s forwards;
         }
+    }
+}
+
+@keyframes introLoad {
+    from {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+    to {
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
     }
 }
